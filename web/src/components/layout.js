@@ -11,11 +11,10 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
-          © {new Date().getFullYear()} <p>Yazan Al-Mufleh</p>
-        </div>
-        <div className={styles.socialMediaWrapper}>
-          <a> <i className='fab fa-github' /></a>
-          <i className='fas fa-instagram' />
+          © {new Date().getFullYear()} Yazan Al-Mufleh
+          <div className={styles.socialMediaWrapper}>
+            social media
+          </div>
         </div>
       </div>
     </footer>

@@ -30,19 +30,19 @@ function Project (props) {
           )}
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            {publishedAt && (
+            {/* {publishedAt && (
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? distanceInWords(new Date(publishedAt), new Date())
                   : format(new Date(publishedAt), 'MMMM Do YYYY')}
               </div>
-            )}
+            )} */}
             {categories && categories.length > 0 && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>
-                <ul>
+                <ul className={styles.categoryList}>
                   {categories.map(category => (
-                    <li key={category._id}>{category.title}</li>
+                    <li className={styles.categoryItem} key={category._id}>{category.title}</li>
                   ))}
                 </ul>
               </div>
