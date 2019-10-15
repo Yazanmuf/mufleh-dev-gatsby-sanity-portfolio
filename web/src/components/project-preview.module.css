@@ -2,16 +2,32 @@
   display: block;
   color: inherit;
   text-decoration: none;
+  min-height: 25rem ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius:5px;
+  padding:1rem;
+
+
+}
+
+.root:hover {
+  transform: scale(1.10) translateZ(0);
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
 }
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
+  text-decoration: none;
 }
+
 
 .leadMediaThumb {
   position: relative;
   padding-bottom: 66.666%;
   background: #eee;
+  
+
 
   @nest & img {
     position: absolute;
@@ -19,14 +35,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
+
+
   }
 }
 
 .title {
   @media (hover: hover) {
     @nest .root:hover & {
-      text-decoration: underline;
+      text-decoration: none;
+
     }
   }
 }

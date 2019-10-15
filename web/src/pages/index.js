@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 import {
   mapEdgesToNodes,
   filterOutDocsWithoutSlugs,
@@ -7,7 +7,7 @@ import {
 } from '../lib/helpers'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
-import ProjectPreviewGrid from '../components/project-preview-grid'
+// import ProjectPreviewGrid from '../components/project-preview-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
@@ -60,7 +60,7 @@ export const query = graphql`
 `
 
 const IndexPage = props => {
-  const { data, errors } = props
+  const {data, errors} = props
 
   if (errors) {
     return (

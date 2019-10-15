@@ -11,6 +11,8 @@
   position: relative;
   background: #eee;
   padding-bottom: calc(9 / 16 * 100%);
+  /* width:40%;
+  height: 40%; */
 
   @nest & img {
     position: absolute;
@@ -25,11 +27,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr ;
   grid-column-gap: 2em;
 
   @media (--media-min-medium) {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns:     minmax(1.2rem, 1fr)
+
+    minmax(1.2rem, 1fr);
+
   }
 }
 
@@ -45,7 +50,10 @@
   }
 }
 
-.metaContent {
+.blockContent {
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .publishedAt {

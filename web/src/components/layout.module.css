@@ -1,10 +1,13 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
-
-
+/* All website background goes here */
+body {
+  background-color: white;
+;
+}
 .content {
-  background: var(--color-white);
+  background: transparent;
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
@@ -52,5 +55,4 @@
 
 .socialMediaWrapper {
   background-color: antiquewhite;
-  font-display: inherit;
 }
