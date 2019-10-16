@@ -4,7 +4,8 @@
 .root {
   position: relative;
   z-index: 100;
-  border-bottom:1px solid var(--color-very-light-gray);
+  /* border-bottom:1px solid var(--color-very-light-gray); */
+  /* background-color: rgb(78, 226, 78); */
 }
 
 .wrapper {
@@ -41,8 +42,6 @@
       @nest &:hover {
         opacity: 0.75;
         transition-duration:0.2s;
-
-
       }
     }
   }
@@ -53,10 +52,11 @@
   font-size: 25px;
   border: none;
   background: none;
-  margin: 0;
+  margin-top: 1.5rem;
   padding: calc(14 / 17 / 2 * 1rem);
   outline: none;
-  color: rgb(49, 49, 49);
+  color: rgb(0, 0, 0);
+
 
   & svg {
     display: block;
@@ -74,6 +74,7 @@
   @nest & ul {
     margin: 0;
     padding: 2em 0em;
+    font-weight:bold;
   }
 
   @nest & ul li a {

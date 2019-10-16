@@ -32,7 +32,7 @@
 
   @media (--media-min-medium) {
     grid-template-columns:     
-    minmax(1.2rem, 1fr) 1fr
+    minmax(1.2rem, 1fr) 
     /* minmax(1.2rem, 1fr); */
 
   }
