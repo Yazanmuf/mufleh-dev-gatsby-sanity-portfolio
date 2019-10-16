@@ -88,6 +88,7 @@ const IndexPage = props => {
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
         <h1 >Welcome to my portfolio</h1>
+        {/* <p>I am starting on a new </p> */}
 
       </Container>
     </Layout>

@@ -17,14 +17,6 @@ function SEO ({description, lang, meta, keywords, title}) {
               htmlAttributes={{lang}}
               title={title}
               titleTemplate={title === siteTitle ? '%s' : `%s | ${siteTitle}`}
-              link={[
-                {
-                  rel: 'icon',
-                  type: 'image/png',
-                  href: 'https://www.svgrepo.com/show/274327/shuffle-random.svg',
-                  sizes: '16x16'
-                }
-              ]}
               meta={[
                 {
                   name: 'description',

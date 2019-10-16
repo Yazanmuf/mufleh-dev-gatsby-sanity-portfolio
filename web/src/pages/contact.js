@@ -13,7 +13,7 @@ const ContactPage = () => {
       <Container>
         <h1 className={responsiveTitle3}>If you're interested in my work or for a job position please contact me:</h1>
 
-        <p>ymufleh@gmail.com</p>
+        {/* <p>ymufleh@gmail.com</p> */}
         <ContactForm />
       </Container>
     </Layout>

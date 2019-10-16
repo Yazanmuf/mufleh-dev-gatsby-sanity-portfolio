@@ -20,6 +20,18 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd && token
       }
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'mufleh.dev',
+        short_name: 'Developer Portfolio',
+        start_url: '/',
+        background_color: 'blue',
+        theme_color: 'yellow',
+        display: 'standalone',
+        icon: 'src/images/icon.png'
+      }
     }
   ]
 }

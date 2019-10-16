@@ -55,5 +55,10 @@ body {
 }
 
 .socialMediaWrapper {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+
+  @nest & img {
+    width:20px;
+    float: right;
+  }
 }

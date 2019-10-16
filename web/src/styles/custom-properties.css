@@ -1,7 +1,9 @@
-:root {
-  --font-family-sans:Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
 
-  --color-black: #141313;
+:root {
+  --font-family-sans:'Ubuntu', sans-serif;
+
+  --color-black: #000000;
   --color-dark-gray: #32373e;
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;
