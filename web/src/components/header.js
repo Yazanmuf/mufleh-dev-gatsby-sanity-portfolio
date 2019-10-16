@@ -16,7 +16,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
         </Link>
       </div>
 
-      <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
+      <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav} aria-label='toggle navigation'>
         <Icon symbol='hamburger' />
       </button>
 
@@ -31,7 +31,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
           <li>
             <Link to='/contact/'>Contact</Link>
           </li>
-          <a href='https://github.com/Yazanmuf'>
+          <a href='https://github.com/Yazanmuf' target='_blank'>
             <img src={github} />
           </a>
 

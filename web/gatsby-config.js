@@ -28,7 +28,7 @@ module.exports = {
         short_name: 'Developer Portfolio',
         start_url: '/',
         background_color: 'blue',
-        theme_color: 'yellow',
+        theme_color: 'blue',
         display: 'standalone',
         icon: 'src/images/icon.png'
       }

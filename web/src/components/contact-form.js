@@ -4,11 +4,11 @@ import styles from './contact-form.module.css'
 const ContactForm = () => {
   return (
 
-    <form className={styles.form} name='contact' method='POST' data-netlify='true'>
-          <p>
-              <label>Your Name: <input className={styles.inputText} type='text' name='name' /></label>
+    <form className={styles.form} name='contact' method='post' data-netlify='true' data-netlify-honeypot='bot-field'>
+      <p>
+        <label>Your Name: <input className={styles.inputText} type='text' name='name' /></label>
       </p>
-          <p>
+      <p>
         <label>Your Email: <input className={styles.inputText} type='email' name='email' /></label>
       </p>
       <p>
