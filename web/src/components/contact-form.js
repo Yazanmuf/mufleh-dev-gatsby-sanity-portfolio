@@ -23,6 +23,7 @@ const ContactForm = () => {
       <p>
         <button className={styles.submitButton} type='submit'>Send</button>
       </p>
+      <input type='hidden' name='form-name' value='your-form-name' />
     </form>
 
   )
